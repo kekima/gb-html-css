@@ -297,6 +297,10 @@ body {
     display: flex;
 }
 
+.featured-block img {
+    transition-duration: 0.3s;
+}
+
 .featured-block:hover img {
     filter: brightness(50%);
 }
@@ -728,6 +732,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin-left: 8px;
+    transition-duration: 0.3s;
 
 }
 
@@ -766,12 +771,12 @@ body {
 }
 
 .dropdown-flex {
-    
+
     margin-right: 46px;
 }
 
 .dropdown-flex:last-child {
-    
+
     margin-right: 0;
 }
 
@@ -804,6 +809,30 @@ body {
     margin-bottom: 10px;
 }
 
+.dropdown-supersale-img {
+    background-image: url(img/dropdown_supersale_img.png);
+    bottom: 20px;
+    right: 20px;
+    height: 115px;
+    width: 255px;
+    position: absolute;
+}
+
+.dropdown-supersale-text-box {
+    width: 70px;
+    bottom: -15px;
+    right: 10px;
+    position: absolute;
+}
+
+.dropdown-supersale-text {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 .menu-list {
     position: relative;
 }
@@ -811,5 +840,3 @@ body {
 .menu-list:hover .dropdown-box {
     display: flex;
 }
-
-
