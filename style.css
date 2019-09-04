@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -62,7 +66,6 @@ body {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
-    text-decoration: none;
     transition-duration: 0.2s;
 }
 
@@ -906,7 +909,7 @@ body {
 }
 
 .single-item-description-container {
-    height: 730px;
+
     width: 1140px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -1020,14 +1023,13 @@ body {
 .single-item-param-picker {
     margin-top: 63px;
     margin-bottom: 0px;
+    width: 540px;
     display: flex;
     justify-content: space-between;
 }
 
 .single-item-picker {
-    width: 180px;
     height: 100px;
-
 }
 
 .single-item-param-picker-descr {
@@ -1041,14 +1043,14 @@ body {
 
 .single-item-picker-box {
     margin-top: 16px;
-width: 144px;
-height: 35px;
-background-color: #ffffff;
-border: 1px solid #eaeaea;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+    width: 144px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .single-item-param-picker-arrow {
@@ -1059,15 +1061,41 @@ justify-content: center;
 
 .colour-picker-example {
     margin-left: 12px;
-width: 12px;
-height: 12px;
-background-color: #ef5b70;
+    width: 12px;
+    height: 12px;
+    background-color: #ef5b70;
 }
 
 .picker-example-text {
     margin-left: 12px;
-font-size: 13px;
-line-height: 24px;
-font-weight: 400;
-color: #bcbcbc;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #bcbcbc;
+}
+
+.single-item-add-button {
+    margin-top: 30px;
+    margin-bottom: 120px;
+    width: 537px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ef5b70;
+    background-color: #fff;
+    border: 1px solid #ef5b70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.2s;
+}
+
+.single-item-add-button:hover {
+    box-shadow: 0 0 8px #ef5b7162;
+}
+
+.pink-cart {
+    margin-right: 10px;
+    width: 26px;
+    height: 24px;
 }
