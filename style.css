@@ -2,16 +2,18 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/*######## HEADER ########*/
+
 .header {
     height: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
     border: 1px solid #ececec;
     background-color: #ffffff;
-}
-
-.container {
-    width: 1140px;
-    margin: 0 auto;
 }
 
 .header-flex {
@@ -203,8 +205,6 @@ body {
     color: #222222;
 }
 
-
-
 .logo-img {
     margin-right: 15px;
 }
@@ -215,6 +215,112 @@ body {
     font-weight: 400;
     line-height: 32px;
 }
+
+.dropdown-box {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    padding: 20px;
+    position: absolute;
+    top: 45px;
+    left: -5px;
+    display: none;
+}
+
+.dropdown-box::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    position: absolute;
+    top: -7px;
+    left: 35px;
+    transform: rotate(45deg);
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+}
+
+.dropdown-box-last {
+    left: auto;
+    right: -5px;
+}
+
+.dropdown-box-last::before {
+    right: 35px;
+    left: auto;
+}
+
+.dropdown-flex {
+    margin-right: 46px;
+}
+
+.dropdown-flex:last-child {
+    margin-right: 0;
+}
+
+.dropdown-link {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    text-decoration: none;
+}
+
+.dropdown-link:hover {
+    color: #f16d7f;
+}
+
+.dropdown-ul {
+    list-style-type: none;
+}
+
+.dropdown-heading {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    border-bottom: 1px solid #e8e8e8;
+    width: 235px;
+    margin-bottom: 10px;
+}
+
+.dropdown-supersale-img {
+    background-image: url(img/dropdown_supersale_img.png);
+    bottom: 20px;
+    right: 20px;
+    height: 115px;
+    width: 255px;
+    position: absolute;
+}
+
+.dropdown-supersale-text-box {
+    width: 70px;
+    bottom: -15px;
+    right: 10px;
+    position: absolute;
+}
+
+.dropdown-supersale-text {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.menu-list {
+    position: relative;
+}
+
+.menu-list:hover .dropdown-box {
+    display: flex;
+}
+
+/*######## BODY ########*/
 
 .body-cats {
     display: flex;
@@ -446,7 +552,6 @@ body {
 }
 
 .offer-benefit-item {
-
     display: flex;
     margin-top: 50px;
 }
@@ -598,9 +703,7 @@ body {
     text-align: center;
 }
 
-
-
-.subscribe-mail-imput {
+.subscribe-mail-input {
     width: 265px;
     height: 46px;
     border-radius: 23px 0 0 23px;
@@ -633,7 +736,7 @@ body {
     transition-duration: 0.2s;
 }
 
-
+/*######## FOOTER ########*/
 
 .information-about-us {
     width: 430px;
@@ -757,108 +860,4 @@ body {
     width: 1px;
     /*   margin-left: 70px;*/
     background-color: #ffffff;
-}
-
-.dropdown-box {
-    border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid #ececec;
-    padding: 20px;
-    position: absolute;
-    top: 45px;
-    left: -5px;
-    display: none;
-}
-
-.dropdown-box::before {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    background:  #ffffff;
-    position: absolute;
-    top: -7px;
-    left: 35px;
-    transform: rotate(45deg);
-    border-top: 1px solid #ececec;
-    border-left: 1px solid #ececec;
-}
-
-.dropdown-box-last {
-    left: auto;
-    right: -5px;
-}
-
-.dropdown-box-last::before {
-    right: 35px;
-    left: auto;
-}
-
-.dropdown-flex {
-    margin-right: 46px;
-}
-
-.dropdown-flex:last-child {
-    margin-right: 0;
-}
-
-.dropdown-link {
-    color: #646464;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.35px;
-    text-decoration: none;
-}
-
-.dropdown-link:hover {
-    color: #f16d7f;
-}
-
-.dropdown-ul {
-    list-style-type: none;
-}
-
-.dropdown-heading {
-    color: #232323;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 32px;
-    text-transform: uppercase;
-    letter-spacing: 0.35px;
-    border-bottom: 1px solid #e8e8e8;
-    width: 235px;
-    margin-bottom: 10px;
-}
-
-.dropdown-supersale-img {
-    background-image: url(img/dropdown_supersale_img.png);
-    bottom: 20px;
-    right: 20px;
-    height: 115px;
-    width: 255px;
-    position: absolute;
-}
-
-.dropdown-supersale-text-box {
-    width: 70px;
-    bottom: -15px;
-    right: 10px;
-    position: absolute;
-}
-
-.dropdown-supersale-text {
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.menu-list {
-    position: relative;
-}
-
-.menu-list:hover .dropdown-box {
-    display: flex;
 }
