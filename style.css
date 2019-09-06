@@ -1118,8 +1118,7 @@ a {
 
 .also-like-block {
     width: 260px;
-    height: 360px;
-    margin-bottom: 60px;
+    height: 360px; 
     overflow: hidden;
     transition-duration: 0.3s;
     display: flex;
